@@ -39,7 +39,7 @@
     <v-row class="cta-section my-12 text-center">
       <v-col>
         <h3>Ready to start your next project?</h3>
-        <v-btn color="primary" large href="/contact">Contact Us</v-btn>
+        <v-btn color="primary" large href="#contact">Contact Us</v-btn>
       </v-col>
     </v-row>
   </v-container>
