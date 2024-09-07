@@ -11,26 +11,31 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomeView,
+    meta: { title: 'Home | Jenny\'s Construction' }
   },
   {
     path: '/about',
     name: 'About',
     component: AboutView,
+    meta: { title: 'About Us | Jenny\'s Construction' },
   },
   {
     path: '/services',
     name: 'Services',
     component: ServicesView,
+    meta: { title: 'Our Services | Jenny\'s Construction' },
   },
   {
     path: '/portfolio',
     name: 'Portfolio',
     component: PortfolioView,
+    meta: { title: 'Portfolio | Jenny\'s Construction' },
   },
   {
     path: '/contact',
     name: 'Contact',
     component: ContactView,
+    meta: { title: 'Contact Us | Jenny\'s Construction' },
   },
 ];
 
@@ -47,6 +52,11 @@ const router = createRouter({
     }
   },
 })
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || 'Jenny\'s Construction'; // Default title if no meta title is defined
+  next();
+});
 
 export default router
 

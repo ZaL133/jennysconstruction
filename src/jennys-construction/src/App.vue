@@ -1,12 +1,30 @@
+<style scoped>
+
+  @media screen and (max-width: 959px) {
+    .jc-header-spacer {
+      flex: 0;
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+   .jc-mobile-menu {
+    flex: 0;
+    display: none;
+   } 
+  }
+</style>
 <template>
   <v-app>
     <!-- App Bar -->
     <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Jenny's Construction</v-toolbar-title>
+      <v-app-bar-nav-icon class="jc-mobile-menu" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>
+        <v-btn text href="#">Jenny's Construction</v-btn>
+      </v-toolbar-title>
 
       <!-- Spacer to push buttons to the right -->
-      <v-spacer></v-spacer>
+      <v-spacer class="jc-header-spacer"></v-spacer>
 
       <!-- Desktop Navigation -->
       <v-row class="d-none d-md-flex">

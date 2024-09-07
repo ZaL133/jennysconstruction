@@ -58,6 +58,7 @@ export default {
   background-position: center;
   color: white;
   padding: 100px 0;
+  height: 100%;
 }
 
 .services-section {
