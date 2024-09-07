@@ -1,18 +1,16 @@
 <template>
-  <HelloWorld />
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1>Welcome to Jenny's Construction</h1>
+        <p>Your modular hotel construction and logistics specialists.</p>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-
-// Components
-import HelloWorld from '../components/HelloWorld.vue';
-
-export default defineComponent({
+export default {
   name: 'HomeView',
-
-  components: {
-    HelloWorld,
-  },
-});
+};
 </script>
