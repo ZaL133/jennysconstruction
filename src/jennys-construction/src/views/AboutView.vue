@@ -2,8 +2,9 @@
   <v-container>
     <!-- Main Heading -->
     <v-row class="my-12">
-      <v-col class="text-center">
+      <v-col>
         <h1>About Jenny's Construction</h1>
+        
         <p>
           At Jenny's Construction, we bring years of expertise in modular hotel
           construction to deliver innovative, efficient, and high-quality
@@ -14,6 +15,10 @@
           compromising on quality.
         </p>
       </v-col>
+    </v-row>
+
+    <v-row class="text-center">
+      <img src="/content/img/logo.png" style="height: 25vh;">
     </v-row>
 
     <!-- Mission Statement -->
@@ -132,5 +137,9 @@ h2 {
 
 .v-card {
   margin-bottom: 20px;
+}
+
+img { 
+  margin: auto; 
 }
 </style>

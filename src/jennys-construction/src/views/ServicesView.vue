@@ -8,34 +8,56 @@
       </v-col>
     </v-row>
 
-    <!-- Services Section -->
-    <v-row class="my-12">
+     <!-- Services Section with Images -->
+     <v-row class="my-12" align="stretch">
       <!-- Modular Hotel Construction -->
-      <v-col cols="12" md="4" class="text-center">
-        <v-card outlined>
+      <v-col cols="12" md="4">
+        <v-card outlined class="service-card">
+          <v-img
+            src="/content/img/modular.png"
+            height="200px"
+            alt="Modular Hotel Construction"
+          ></v-img>
           <v-card-title>Modular Hotel Construction</v-card-title>
           <v-card-text>
-            We specialize in efficient, sustainable, and customizable modular hotel construction. By leveraging modular technology, we reduce construction timelines, minimize disruption, and ensure consistent quality across all projects.
+            We specialize in efficient, sustainable, and customizable modular hotel
+            construction. By leveraging modular technology, we reduce construction
+            timelines, minimize disruption, and ensure consistent quality across all
+            projects.
           </v-card-text>
         </v-card>
       </v-col>
 
       <!-- Logistics Management -->
-      <v-col cols="12" md="4" class="text-center">
-        <v-card outlined>
+      <v-col cols="12" md="4">
+        <v-card outlined class="service-card">
+          <v-img
+            src="/content/img/logistics.png"
+            height="200px"
+            alt="Logistics Management"
+          ></v-img>
           <v-card-title>Logistics Management</v-card-title>
           <v-card-text>
-            Our logistics management services ensure that all aspects of the project are executed seamlessly. From material delivery to construction site coordination, we make sure everything runs like clockwork.
+            Our logistics management services ensure that all aspects of the project
+            are executed seamlessly. From material delivery to construction site
+            coordination, we make sure everything runs like clockwork.
           </v-card-text>
         </v-card>
       </v-col>
 
       <!-- Project Planning -->
-      <v-col cols="12" md="4" class="text-center">
-        <v-card outlined>
+      <v-col cols="12" md="4">
+        <v-card outlined class="service-card">
+          <v-img
+            src="/content/img/planning.png"
+            height="200px"
+            alt="Project Planning"
+          ></v-img>
           <v-card-title>Project Planning</v-card-title>
           <v-card-text>
-            We provide comprehensive project planning services that take you from concept to completion. Our team works closely with clients to understand their goals, develop detailed plans, and execute flawlessly.
+            We provide comprehensive project planning services that take you from
+            concept to completion. Our team works closely with clients to understand
+            their goals, develop detailed plans, and execute flawlessly.
           </v-card-text>
         </v-card>
       </v-col>
@@ -91,4 +113,12 @@ h1 {
 .v-btn {
   margin-top: 20px;
 }
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card > div { flex: 1; }
 </style>

@@ -53,12 +53,12 @@ export default {
 
 <style scoped>
 .hero-section {
-  background-image: url('/public/content/img/logo.png');
+  background-image: url('/public/content/img/home-hero.png');
   background-size: cover;
   background-position: center;
   color: white;
   padding: 100px 0;
-  height: 100%;
+  height: 60vh;
 }
 
 .services-section {
