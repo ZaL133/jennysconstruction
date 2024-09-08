@@ -17,7 +17,7 @@
 <template>
   <v-app>
     <!-- App Bar -->
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary">
       <v-app-bar-nav-icon class="jc-mobile-menu" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>
         <v-btn text href="#">Jenny's Construction</v-btn>
