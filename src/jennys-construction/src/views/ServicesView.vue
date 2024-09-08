@@ -118,7 +118,11 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .service-card > div { flex: 1; }
+.service-card > div.v-img { flex: 6;}
+.service-card > div.v-card-text { flex: 2;}
+
 </style>

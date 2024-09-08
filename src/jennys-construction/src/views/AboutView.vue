@@ -17,7 +17,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="text-center">
+    <v-row class="text-center" theme="dark">
       <img src="/content/img/logo.png" style="height: 25vh;">
     </v-row>
 
