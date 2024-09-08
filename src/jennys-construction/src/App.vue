@@ -17,7 +17,7 @@
 <template>
   <v-app>
     <!-- App Bar -->
-    <v-app-bar app>
+    <v-app-bar app color="primary" dark>
       <v-app-bar-nav-icon class="jc-mobile-menu" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>
         <v-btn text href="#">Jenny's Construction</v-btn>
@@ -63,7 +63,7 @@
     </v-main>
 
     <!-- Footer -->
-    <v-footer app padless>
+    <v-footer app padless color="secondary">
       <v-col class="text-center">
         © 2024 Jenny's Construction
       </v-col>
